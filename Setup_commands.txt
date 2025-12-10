@@ -1,0 +1,444 @@
+Microsoft Windows [Version 10.0.26100.7171]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\vishn>cd C:\Users\vishn\Documents\Deep_Learning\Lab4
+
+C:\Users\vishn\Documents\Deep_Learning\Lab4>python -m venv venv
+Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+
+C:\Users\vishn\Documents\Deep_Learning\Lab4>py --version
+Python 3.13.0
+
+C:\Users\vishn\Documents\Deep_Learning\Lab4>py -m venv venv
+
+C:\Users\vishn\Documents\Deep_Learning\Lab4>venv\Scripts\activate.bat
+
+(venv) C:\Users\vishn\Documents\Deep_Learning\Lab4>pip install --upgrade pip
+Requirement already satisfied: pip in c:\users\vishn\documents\deep_learning\lab4\venv\lib\site-packages (24.2)
+Collecting pip
+  Using cached pip-25.3-py3-none-any.whl.metadata (4.7 kB)
+Using cached pip-25.3-py3-none-any.whl (1.8 MB)
+
+[notice] A new release of pip is available: 24.2 -> 25.3
+[notice] To update, run: python.exe -m pip install --upgrade pip
+ERROR: To modify pip, please run the following command:
+C:\Users\vishn\Documents\Deep_Learning\Lab4\venv\Scripts\python.exe -m pip install --upgrade pip
+
+(venv) C:\Users\vishn\Documents\Deep_Learning\Lab4>pip install tensorflow matplotlib numpy pillow tqdm
+Collecting tensorflow
+  Using cached tensorflow-2.20.0-cp313-cp313-win_amd64.whl.metadata (4.6 kB)
+Collecting matplotlib
+  Using cached matplotlib-3.10.7-cp313-cp313-win_amd64.whl.metadata (11 kB)
+Collecting numpy
+  Downloading numpy-2.3.5-cp313-cp313-win_amd64.whl.metadata (60 kB)
+Collecting pillow
+  Using cached pillow-12.0.0-cp313-cp313-win_amd64.whl.metadata (9.0 kB)
+Collecting tqdm
+  Downloading tqdm-4.67.1-py3-none-any.whl.metadata (57 kB)
+Collecting absl-py>=1.0.0 (from tensorflow)
+  Using cached absl_py-2.3.1-py3-none-any.whl.metadata (3.3 kB)
+Collecting astunparse>=1.6.0 (from tensorflow)
+  Using cached astunparse-1.6.3-py2.py3-none-any.whl.metadata (4.4 kB)
+Collecting flatbuffers>=24.3.25 (from tensorflow)
+  Using cached flatbuffers-25.9.23-py2.py3-none-any.whl.metadata (875 bytes)
+Collecting gast!=0.5.0,!=0.5.1,!=0.5.2,>=0.2.1 (from tensorflow)
+  Downloading gast-0.7.0-py3-none-any.whl.metadata (1.5 kB)
+Collecting google_pasta>=0.1.1 (from tensorflow)
+  Using cached google_pasta-0.2.0-py3-none-any.whl.metadata (814 bytes)
+Collecting libclang>=13.0.0 (from tensorflow)
+  Using cached libclang-18.1.1-py2.py3-none-win_amd64.whl.metadata (5.3 kB)
+Collecting opt_einsum>=2.3.2 (from tensorflow)
+  Using cached opt_einsum-3.4.0-py3-none-any.whl.metadata (6.3 kB)
+Collecting packaging (from tensorflow)
+  Using cached packaging-25.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting protobuf>=5.28.0 (from tensorflow)
+  Downloading protobuf-6.33.2-cp310-abi3-win_amd64.whl.metadata (593 bytes)
+Collecting requests<3,>=2.21.0 (from tensorflow)
+  Using cached requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+Collecting setuptools (from tensorflow)
+  Using cached setuptools-80.9.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting six>=1.12.0 (from tensorflow)
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting termcolor>=1.1.0 (from tensorflow)
+  Using cached termcolor-3.2.0-py3-none-any.whl.metadata (6.4 kB)
+Collecting typing_extensions>=3.6.6 (from tensorflow)
+  Using cached typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting wrapt>=1.11.0 (from tensorflow)
+  Using cached wrapt-2.0.1-cp313-cp313-win_amd64.whl.metadata (9.2 kB)
+Collecting grpcio<2.0,>=1.24.3 (from tensorflow)
+  Using cached grpcio-1.76.0-cp313-cp313-win_amd64.whl.metadata (3.8 kB)
+Collecting tensorboard~=2.20.0 (from tensorflow)
+  Using cached tensorboard-2.20.0-py3-none-any.whl.metadata (1.8 kB)
+Collecting keras>=3.10.0 (from tensorflow)
+  Using cached keras-3.12.0-py3-none-any.whl.metadata (5.9 kB)
+Collecting h5py>=3.11.0 (from tensorflow)
+  Using cached h5py-3.15.1-cp313-cp313-win_amd64.whl.metadata (3.1 kB)
+Collecting ml_dtypes<1.0.0,>=0.5.1 (from tensorflow)
+  Downloading ml_dtypes-0.5.4-cp313-cp313-win_amd64.whl.metadata (9.2 kB)
+Collecting contourpy>=1.0.1 (from matplotlib)
+  Using cached contourpy-1.3.3-cp313-cp313-win_amd64.whl.metadata (5.5 kB)
+Collecting cycler>=0.10 (from matplotlib)
+  Using cached cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.22.0 (from matplotlib)
+  Downloading fonttools-4.61.0-cp313-cp313-win_amd64.whl.metadata (115 kB)
+Collecting kiwisolver>=1.3.1 (from matplotlib)
+  Using cached kiwisolver-1.4.9-cp313-cp313-win_amd64.whl.metadata (6.4 kB)
+Collecting pyparsing>=3 (from matplotlib)
+  Using cached pyparsing-3.2.5-py3-none-any.whl.metadata (5.0 kB)
+Collecting python-dateutil>=2.7 (from matplotlib)
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting colorama (from tqdm)
+  Downloading colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+Collecting wheel<1.0,>=0.23.0 (from astunparse>=1.6.0->tensorflow)
+  Using cached wheel-0.45.1-py3-none-any.whl.metadata (2.3 kB)
+Collecting rich (from keras>=3.10.0->tensorflow)
+  Using cached rich-14.2.0-py3-none-any.whl.metadata (18 kB)
+Collecting namex (from keras>=3.10.0->tensorflow)
+  Using cached namex-0.1.0-py3-none-any.whl.metadata (322 bytes)
+Collecting optree (from keras>=3.10.0->tensorflow)
+  Downloading optree-0.18.0-cp313-cp313-win_amd64.whl.metadata (35 kB)
+Collecting charset_normalizer<4,>=2 (from requests<3,>=2.21.0->tensorflow)
+  Using cached charset_normalizer-3.4.4-cp313-cp313-win_amd64.whl.metadata (38 kB)
+Collecting idna<4,>=2.5 (from requests<3,>=2.21.0->tensorflow)
+  Using cached idna-3.11-py3-none-any.whl.metadata (8.4 kB)
+Collecting urllib3<3,>=1.21.1 (from requests<3,>=2.21.0->tensorflow)
+  Downloading urllib3-2.6.1-py3-none-any.whl.metadata (6.6 kB)
+Collecting certifi>=2017.4.17 (from requests<3,>=2.21.0->tensorflow)
+  Using cached certifi-2025.11.12-py3-none-any.whl.metadata (2.5 kB)
+Collecting markdown>=2.6.8 (from tensorboard~=2.20.0->tensorflow)
+  Using cached markdown-3.10-py3-none-any.whl.metadata (5.1 kB)
+Collecting tensorboard-data-server<0.8.0,>=0.7.0 (from tensorboard~=2.20.0->tensorflow)
+  Using cached tensorboard_data_server-0.7.2-py3-none-any.whl.metadata (1.1 kB)
+Collecting werkzeug>=1.0.1 (from tensorboard~=2.20.0->tensorflow)
+  Downloading werkzeug-3.1.4-py3-none-any.whl.metadata (4.0 kB)
+Collecting markupsafe>=2.1.1 (from werkzeug>=1.0.1->tensorboard~=2.20.0->tensorflow)
+  Using cached markupsafe-3.0.3-cp313-cp313-win_amd64.whl.metadata (2.8 kB)
+Collecting markdown-it-py>=2.2.0 (from rich->keras>=3.10.0->tensorflow)
+  Using cached markdown_it_py-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich->keras>=3.10.0->tensorflow)
+  Using cached pygments-2.19.2-py3-none-any.whl.metadata (2.5 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich->keras>=3.10.0->tensorflow)
+  Using cached mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Using cached tensorflow-2.20.0-cp313-cp313-win_amd64.whl (332.0 MB)
+Using cached matplotlib-3.10.7-cp313-cp313-win_amd64.whl (8.1 MB)
+Downloading numpy-2.3.5-cp313-cp313-win_amd64.whl (12.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.8/12.8 MB 21.2 MB/s eta 0:00:00
+Using cached pillow-12.0.0-cp313-cp313-win_amd64.whl (7.0 MB)
+Downloading tqdm-4.67.1-py3-none-any.whl (78 kB)
+Using cached absl_py-2.3.1-py3-none-any.whl (135 kB)
+Using cached astunparse-1.6.3-py2.py3-none-any.whl (12 kB)
+Using cached contourpy-1.3.3-cp313-cp313-win_amd64.whl (226 kB)
+Using cached cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Using cached flatbuffers-25.9.23-py2.py3-none-any.whl (30 kB)
+Downloading fonttools-4.61.0-cp313-cp313-win_amd64.whl (2.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 14.6 MB/s eta 0:00:00
+Downloading gast-0.7.0-py3-none-any.whl (22 kB)
+Using cached google_pasta-0.2.0-py3-none-any.whl (57 kB)
+Using cached grpcio-1.76.0-cp313-cp313-win_amd64.whl (4.7 MB)
+Using cached h5py-3.15.1-cp313-cp313-win_amd64.whl (2.9 MB)
+Using cached keras-3.12.0-py3-none-any.whl (1.5 MB)
+Using cached kiwisolver-1.4.9-cp313-cp313-win_amd64.whl (73 kB)
+Using cached libclang-18.1.1-py2.py3-none-win_amd64.whl (26.4 MB)
+Downloading ml_dtypes-0.5.4-cp313-cp313-win_amd64.whl (212 kB)
+Using cached opt_einsum-3.4.0-py3-none-any.whl (71 kB)
+Using cached packaging-25.0-py3-none-any.whl (66 kB)
+Downloading protobuf-6.33.2-cp310-abi3-win_amd64.whl (436 kB)
+Using cached pyparsing-3.2.5-py3-none-any.whl (113 kB)
+Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Using cached requests-2.32.5-py3-none-any.whl (64 kB)
+Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Using cached tensorboard-2.20.0-py3-none-any.whl (5.5 MB)
+Using cached setuptools-80.9.0-py3-none-any.whl (1.2 MB)
+Using cached termcolor-3.2.0-py3-none-any.whl (7.7 kB)
+Using cached typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+Using cached wrapt-2.0.1-cp313-cp313-win_amd64.whl (60 kB)
+Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Using cached certifi-2025.11.12-py3-none-any.whl (159 kB)
+Using cached charset_normalizer-3.4.4-cp313-cp313-win_amd64.whl (107 kB)
+Using cached idna-3.11-py3-none-any.whl (71 kB)
+Using cached markdown-3.10-py3-none-any.whl (107 kB)
+Using cached tensorboard_data_server-0.7.2-py3-none-any.whl (2.4 kB)
+Downloading urllib3-2.6.1-py3-none-any.whl (131 kB)
+Downloading werkzeug-3.1.4-py3-none-any.whl (224 kB)
+Using cached wheel-0.45.1-py3-none-any.whl (72 kB)
+Using cached namex-0.1.0-py3-none-any.whl (5.9 kB)
+Downloading optree-0.18.0-cp313-cp313-win_amd64.whl (314 kB)
+Using cached rich-14.2.0-py3-none-any.whl (243 kB)
+Using cached markdown_it_py-4.0.0-py3-none-any.whl (87 kB)
+Using cached markupsafe-3.0.3-cp313-cp313-win_amd64.whl (15 kB)
+Using cached pygments-2.19.2-py3-none-any.whl (1.2 MB)
+Using cached mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Installing collected packages: namex, libclang, flatbuffers, wrapt, wheel, urllib3, typing_extensions, termcolor, tensorboard-data-server, six, setuptools, pyparsing, pygments, protobuf, pillow, packaging, opt_einsum, numpy, mdurl, markupsafe, markdown, kiwisolver, idna, gast, fonttools, cycler, colorama, charset_normalizer, certifi, absl-py, werkzeug, tqdm, requests, python-dateutil, optree, ml_dtypes, markdown-it-py, h5py, grpcio, google_pasta, contourpy, astunparse, tensorboard, rich, matplotlib, keras, tensorflow
+Successfully installed absl-py-2.3.1 astunparse-1.6.3 certifi-2025.11.12 charset_normalizer-3.4.4 colorama-0.4.6 contourpy-1.3.3 cycler-0.12.1 flatbuffers-25.9.23 fonttools-4.61.0 gast-0.7.0 google_pasta-0.2.0 grpcio-1.76.0 h5py-3.15.1 idna-3.11 keras-3.12.0 kiwisolver-1.4.9 libclang-18.1.1 markdown-3.10 markdown-it-py-4.0.0 markupsafe-3.0.3 matplotlib-3.10.7 mdurl-0.1.2 ml_dtypes-0.5.4 namex-0.1.0 numpy-2.3.5 opt_einsum-3.4.0 optree-0.18.0 packaging-25.0 pillow-12.0.0 protobuf-6.33.2 pygments-2.19.2 pyparsing-3.2.5 python-dateutil-2.9.0.post0 requests-2.32.5 rich-14.2.0 setuptools-80.9.0 six-1.17.0 tensorboard-2.20.0 tensorboard-data-server-0.7.2 tensorflow-2.20.0 termcolor-3.2.0 tqdm-4.67.1 typing_extensions-4.15.0 urllib3-2.6.1 werkzeug-3.1.4 wheel-0.45.1 wrapt-2.0.1
+
+(venv) C:\Users\vishn\Documents\Deep_Learning\Lab4>python train.py --cell GRU --units 128 --layers 1 --trials 3 --epochs 20 --batch_size 128
+2025-12-10 13:51:17.157647: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-12-10 13:51:18.778140: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+=== Trial 1/3 for GRU ===
+2025-12-10 13:51:19.839172: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Epoch 1/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 21ms/step - accuracy: 0.7312 - loss: 0.9242 - val_accuracy: 0.8748 - val_loss: 0.4658
+Epoch 2/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 2s 21ms/step - accuracy: 0.8893 - loss: 0.3993 - val_accuracy: 0.8908 - val_loss: 0.3869
+Epoch 3/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 23ms/step - accuracy: 0.9001 - loss: 0.3473 - val_accuracy: 0.9023 - val_loss: 0.3548
+Epoch 4/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 25ms/step - accuracy: 0.9155 - loss: 0.2948 - val_accuracy: 0.9087 - val_loss: 0.3275
+Epoch 5/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 25ms/step - accuracy: 0.9217 - loss: 0.2666 - val_accuracy: 0.9103 - val_loss: 0.3060
+Epoch 6/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 26ms/step - accuracy: 0.9286 - loss: 0.2468 - val_accuracy: 0.9089 - val_loss: 0.3057
+Epoch 7/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 26ms/step - accuracy: 0.9270 - loss: 0.2450 - val_accuracy: 0.9154 - val_loss: 0.2855
+Epoch 8/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 25ms/step - accuracy: 0.9360 - loss: 0.2130 - val_accuracy: 0.9178 - val_loss: 0.2874
+Epoch 9/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 25ms/step - accuracy: 0.9295 - loss: 0.2367 - val_accuracy: 0.9183 - val_loss: 0.2807
+Epoch 10/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 26ms/step - accuracy: 0.9421 - loss: 0.1927 - val_accuracy: 0.9260 - val_loss: 0.2570
+Epoch 11/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 25ms/step - accuracy: 0.9469 - loss: 0.1771 - val_accuracy: 0.9212 - val_loss: 0.2621
+Epoch 12/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 26ms/step - accuracy: 0.9503 - loss: 0.1641 - val_accuracy: 0.9204 - val_loss: 0.2759
+Epoch 13/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 28ms/step - accuracy: 0.9539 - loss: 0.1530 - val_accuracy: 0.9268 - val_loss: 0.2532
+Epoch 14/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 24ms/step - accuracy: 0.9559 - loss: 0.1432 - val_accuracy: 0.9210 - val_loss: 0.2874
+Epoch 15/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 23ms/step - accuracy: 0.9535 - loss: 0.1499 - val_accuracy: 0.9303 - val_loss: 0.2499
+Epoch 16/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 26ms/step - accuracy: 0.9614 - loss: 0.1261 - val_accuracy: 0.9282 - val_loss: 0.2553
+Epoch 17/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 26ms/step - accuracy: 0.9615 - loss: 0.1246 - val_accuracy: 0.9244 - val_loss: 0.2650
+Epoch 18/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 26ms/step - accuracy: 0.9653 - loss: 0.1105 - val_accuracy: 0.9284 - val_loss: 0.2558
+Epoch 19/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 26ms/step - accuracy: 0.9688 - loss: 0.1007 - val_accuracy: 0.9228 - val_loss: 0.2621
+Epoch 20/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 5s 26ms/step - accuracy: 0.9517 - loss: 0.1487 - val_accuracy: 0.9292 - val_loss: 0.2506
+Trial 1 Validation Accuracy: 0.9292
+
+=== Trial 2/3 for GRU ===
+Epoch 1/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 4s 22ms/step - accuracy: 0.7108 - loss: 0.9962 - val_accuracy: 0.8555 - val_loss: 0.5162
+Epoch 2/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 25ms/step - accuracy: 0.8818 - loss: 0.4248 - val_accuracy: 0.8929 - val_loss: 0.3864
+Epoch 3/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 26ms/step - accuracy: 0.9017 - loss: 0.3434 - val_accuracy: 0.9017 - val_loss: 0.3444
+Epoch 4/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 28ms/step - accuracy: 0.9148 - loss: 0.3006 - val_accuracy: 0.9044 - val_loss: 0.3364
+Epoch 5/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 26ms/step - accuracy: 0.9196 - loss: 0.2724 - val_accuracy: 0.9103 - val_loss: 0.2989
+Epoch 6/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 25ms/step - accuracy: 0.9269 - loss: 0.2496 - val_accuracy: 0.9188 - val_loss: 0.2832
+Epoch 7/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 25ms/step - accuracy: 0.9318 - loss: 0.2307 - val_accuracy: 0.9148 - val_loss: 0.2823
+Epoch 8/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 25ms/step - accuracy: 0.9354 - loss: 0.2089 - val_accuracy: 0.9199 - val_loss: 0.2651
+Epoch 9/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 25ms/step - accuracy: 0.9404 - loss: 0.1951 - val_accuracy: 0.9231 - val_loss: 0.2762
+Epoch 10/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 25ms/step - accuracy: 0.9468 - loss: 0.1797 - val_accuracy: 0.9202 - val_loss: 0.2666
+Epoch 11/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 25ms/step - accuracy: 0.9469 - loss: 0.1707 - val_accuracy: 0.9226 - val_loss: 0.2560
+Epoch 12/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 25ms/step - accuracy: 0.9515 - loss: 0.1555 - val_accuracy: 0.9191 - val_loss: 0.2809
+Epoch 13/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 25ms/step - accuracy: 0.9542 - loss: 0.1473 - val_accuracy: 0.9202 - val_loss: 0.2762
+Epoch 14/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 26ms/step - accuracy: 0.9581 - loss: 0.1348 - val_accuracy: 0.9223 - val_loss: 0.2856
+Epoch 15/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 27ms/step - accuracy: 0.9545 - loss: 0.1456 - val_accuracy: 0.9263 - val_loss: 0.2569
+Epoch 16/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 26ms/step - accuracy: 0.9639 - loss: 0.1166 - val_accuracy: 0.9234 - val_loss: 0.2738
+Epoch 17/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 25ms/step - accuracy: 0.9674 - loss: 0.1049 - val_accuracy: 0.9271 - val_loss: 0.2695
+Epoch 18/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 25ms/step - accuracy: 0.9684 - loss: 0.1006 - val_accuracy: 0.9234 - val_loss: 0.2690
+Epoch 19/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 25ms/step - accuracy: 0.9706 - loss: 0.0933 - val_accuracy: 0.9250 - val_loss: 0.2735
+Epoch 20/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 25ms/step - accuracy: 0.9744 - loss: 0.0845 - val_accuracy: 0.9260 - val_loss: 0.2683
+Trial 2 Validation Accuracy: 0.9260
+
+=== Trial 3/3 for GRU ===
+Epoch 1/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 4s 26ms/step - accuracy: 0.7360 - loss: 0.9511 - val_accuracy: 0.8622 - val_loss: 0.5288
+Epoch 2/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 25ms/step - accuracy: 0.8796 - loss: 0.4302 - val_accuracy: 0.8924 - val_loss: 0.3754
+Epoch 3/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 26ms/step - accuracy: 0.9008 - loss: 0.3454 - val_accuracy: 0.8916 - val_loss: 0.3731
+Epoch 4/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 25ms/step - accuracy: 0.9064 - loss: 0.3178 - val_accuracy: 0.9100 - val_loss: 0.3235
+Epoch 5/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 25ms/step - accuracy: 0.9158 - loss: 0.2834 - val_accuracy: 0.9023 - val_loss: 0.3338
+Epoch 6/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 25ms/step - accuracy: 0.9157 - loss: 0.2849 - val_accuracy: 0.9146 - val_loss: 0.2958
+Epoch 7/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 25ms/step - accuracy: 0.9256 - loss: 0.2487 - val_accuracy: 0.9244 - val_loss: 0.2680
+Epoch 8/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 25ms/step - accuracy: 0.9317 - loss: 0.2295 - val_accuracy: 0.9223 - val_loss: 0.2659
+Epoch 9/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 25ms/step - accuracy: 0.9362 - loss: 0.2099 - val_accuracy: 0.9212 - val_loss: 0.2698
+Epoch 10/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 25ms/step - accuracy: 0.9342 - loss: 0.2176 - val_accuracy: 0.9242 - val_loss: 0.2600
+Epoch 11/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 25ms/step - accuracy: 0.9428 - loss: 0.1877 - val_accuracy: 0.9172 - val_loss: 0.2993
+Epoch 12/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 25ms/step - accuracy: 0.9289 - loss: 0.2376 - val_accuracy: 0.9231 - val_loss: 0.2530
+Epoch 13/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 25ms/step - accuracy: 0.9465 - loss: 0.1749 - val_accuracy: 0.9274 - val_loss: 0.2512
+Epoch 14/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 25ms/step - accuracy: 0.9513 - loss: 0.1589 - val_accuracy: 0.9271 - val_loss: 0.2534
+Epoch 15/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 26ms/step - accuracy: 0.9539 - loss: 0.1484 - val_accuracy: 0.9306 - val_loss: 0.2500
+Epoch 16/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 26ms/step - accuracy: 0.9585 - loss: 0.1383 - val_accuracy: 0.9276 - val_loss: 0.2617
+Epoch 17/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 25ms/step - accuracy: 0.9549 - loss: 0.1444 - val_accuracy: 0.9292 - val_loss: 0.2525
+Epoch 18/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 25ms/step - accuracy: 0.9627 - loss: 0.1192 - val_accuracy: 0.9322 - val_loss: 0.2449
+Epoch 19/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 25ms/step - accuracy: 0.9653 - loss: 0.1144 - val_accuracy: 0.9308 - val_loss: 0.2517
+Epoch 20/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 25ms/step - accuracy: 0.9668 - loss: 0.1079 - val_accuracy: 0.9295 - val_loss: 0.2470
+Trial 3 Validation Accuracy: 0.9295
+
+Average Validation Accuracy over 3 trials for GRU: 0.9283
+
+(venv) C:\Users\vishn\Documents\Deep_Learning\Lab4>python train.py --cell MGU --units 128 --layers 1 --trials 3 --epochs 20 --batch_size 128
+2025-12-10 13:55:09.384423: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-12-10 13:55:10.883158: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+=== Trial 1/3 for MGU ===
+2025-12-10 13:55:11.931465: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Epoch 1/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 21ms/step - accuracy: 0.6792 - loss: 1.0889 - val_accuracy: 0.8398 - val_loss: 0.5952
+Epoch 2/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 2s 19ms/step - accuracy: 0.8585 - loss: 0.5024 - val_accuracy: 0.8571 - val_loss: 0.4874
+Epoch 3/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 24ms/step - accuracy: 0.8762 - loss: 0.4303 - val_accuracy: 0.8870 - val_loss: 0.4005
+Epoch 4/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 22ms/step - accuracy: 0.8943 - loss: 0.3634 - val_accuracy: 0.8868 - val_loss: 0.3918
+Epoch 5/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 23ms/step - accuracy: 0.9032 - loss: 0.3318 - val_accuracy: 0.8927 - val_loss: 0.3689
+Epoch 6/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 25ms/step - accuracy: 0.9098 - loss: 0.3088 - val_accuracy: 0.8935 - val_loss: 0.3792
+Epoch 7/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 2s 21ms/step - accuracy: 0.9101 - loss: 0.3098 - val_accuracy: 0.8980 - val_loss: 0.3430
+Epoch 8/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 22ms/step - accuracy: 0.9165 - loss: 0.2794 - val_accuracy: 0.8961 - val_loss: 0.3486
+Epoch 9/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 22ms/step - accuracy: 0.9132 - loss: 0.2936 - val_accuracy: 0.9060 - val_loss: 0.3299
+Epoch 10/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 2s 20ms/step - accuracy: 0.9232 - loss: 0.2565 - val_accuracy: 0.9113 - val_loss: 0.3127
+Epoch 11/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 22ms/step - accuracy: 0.9290 - loss: 0.2376 - val_accuracy: 0.9135 - val_loss: 0.3060
+Epoch 12/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 23ms/step - accuracy: 0.9318 - loss: 0.2271 - val_accuracy: 0.9130 - val_loss: 0.2976
+Epoch 13/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 2s 20ms/step - accuracy: 0.9326 - loss: 0.2265 - val_accuracy: 0.9108 - val_loss: 0.3106
+Epoch 14/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 23ms/step - accuracy: 0.9339 - loss: 0.2152 - val_accuracy: 0.9105 - val_loss: 0.3367
+Epoch 15/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 20ms/step - accuracy: 0.9150 - loss: 0.2817 - val_accuracy: 0.9140 - val_loss: 0.2918
+Epoch 16/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 23ms/step - accuracy: 0.9340 - loss: 0.2144 - val_accuracy: 0.9207 - val_loss: 0.2777
+Epoch 17/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 23ms/step - accuracy: 0.9390 - loss: 0.1995 - val_accuracy: 0.9180 - val_loss: 0.2902
+Epoch 18/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 24ms/step - accuracy: 0.9433 - loss: 0.1870 - val_accuracy: 0.9175 - val_loss: 0.2919
+Epoch 19/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 24ms/step - accuracy: 0.9441 - loss: 0.1791 - val_accuracy: 0.9146 - val_loss: 0.2910
+Epoch 20/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 21ms/step - accuracy: 0.9294 - loss: 0.2350 - val_accuracy: 0.9210 - val_loss: 0.2801
+Trial 1 Validation Accuracy: 0.9210
+
+=== Trial 2/3 for MGU ===
+Epoch 1/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 4s 24ms/step - accuracy: 0.6809 - loss: 1.0739 - val_accuracy: 0.8099 - val_loss: 0.6398
+Epoch 2/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 23ms/step - accuracy: 0.8459 - loss: 0.5339 - val_accuracy: 0.8681 - val_loss: 0.4640
+Epoch 3/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 2s 21ms/step - accuracy: 0.8772 - loss: 0.4236 - val_accuracy: 0.8737 - val_loss: 0.4421
+Epoch 4/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 23ms/step - accuracy: 0.8864 - loss: 0.3872 - val_accuracy: 0.8684 - val_loss: 0.4394
+Epoch 5/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 21ms/step - accuracy: 0.8988 - loss: 0.3469 - val_accuracy: 0.8860 - val_loss: 0.3703
+Epoch 6/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 22ms/step - accuracy: 0.9058 - loss: 0.3198 - val_accuracy: 0.8993 - val_loss: 0.3409
+Epoch 7/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 22ms/step - accuracy: 0.9107 - loss: 0.3056 - val_accuracy: 0.9031 - val_loss: 0.3284
+Epoch 8/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 22ms/step - accuracy: 0.9145 - loss: 0.2861 - val_accuracy: 0.9041 - val_loss: 0.3239
+Epoch 9/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 23ms/step - accuracy: 0.9176 - loss: 0.2732 - val_accuracy: 0.9132 - val_loss: 0.3062
+Epoch 10/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 23ms/step - accuracy: 0.9216 - loss: 0.2600 - val_accuracy: 0.9079 - val_loss: 0.3143
+Epoch 11/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 2s 21ms/step - accuracy: 0.9262 - loss: 0.2456 - val_accuracy: 0.9130 - val_loss: 0.2906
+Epoch 12/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 23ms/step - accuracy: 0.9307 - loss: 0.2289 - val_accuracy: 0.9103 - val_loss: 0.3019
+Epoch 13/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 2s 21ms/step - accuracy: 0.9318 - loss: 0.2220 - val_accuracy: 0.9113 - val_loss: 0.3047
+Epoch 14/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 23ms/step - accuracy: 0.9350 - loss: 0.2159 - val_accuracy: 0.9039 - val_loss: 0.3180
+Epoch 15/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 22ms/step - accuracy: 0.9176 - loss: 0.2741 - val_accuracy: 0.9154 - val_loss: 0.2900
+Epoch 16/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 2s 21ms/step - accuracy: 0.9361 - loss: 0.2073 - val_accuracy: 0.9210 - val_loss: 0.2817
+Epoch 17/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 24ms/step - accuracy: 0.9397 - loss: 0.1954 - val_accuracy: 0.9228 - val_loss: 0.2683
+Epoch 18/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 22ms/step - accuracy: 0.9374 - loss: 0.2023 - val_accuracy: 0.9164 - val_loss: 0.2804
+Epoch 19/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 22ms/step - accuracy: 0.9441 - loss: 0.1842 - val_accuracy: 0.9188 - val_loss: 0.2907
+Epoch 20/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 25ms/step - accuracy: 0.9468 - loss: 0.1740 - val_accuracy: 0.9223 - val_loss: 0.2655
+Trial 2 Validation Accuracy: 0.9223
+
+=== Trial 3/3 for MGU ===
+Epoch 1/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 4s 25ms/step - accuracy: 0.6904 - loss: 1.0539 - val_accuracy: 0.8347 - val_loss: 0.5990
+Epoch 2/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 24ms/step - accuracy: 0.8567 - loss: 0.5148 - val_accuracy: 0.8734 - val_loss: 0.4572
+Epoch 3/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 22ms/step - accuracy: 0.8806 - loss: 0.4150 - val_accuracy: 0.8879 - val_loss: 0.4186
+Epoch 4/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 22ms/step - accuracy: 0.8881 - loss: 0.3928 - val_accuracy: 0.8903 - val_loss: 0.3823
+Epoch 5/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 25ms/step - accuracy: 0.8951 - loss: 0.3618 - val_accuracy: 0.8919 - val_loss: 0.3856
+Epoch 6/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 22ms/step - accuracy: 0.9024 - loss: 0.3347 - val_accuracy: 0.8993 - val_loss: 0.3595
+Epoch 7/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 23ms/step - accuracy: 0.9057 - loss: 0.3221 - val_accuracy: 0.9044 - val_loss: 0.3287
+Epoch 8/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 23ms/step - accuracy: 0.9138 - loss: 0.2921 - val_accuracy: 0.9044 - val_loss: 0.3161
+Epoch 9/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 24ms/step - accuracy: 0.9183 - loss: 0.2734 - val_accuracy: 0.9031 - val_loss: 0.3588
+Epoch 10/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 23ms/step - accuracy: 0.9145 - loss: 0.2852 - val_accuracy: 0.9071 - val_loss: 0.3050
+Epoch 11/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 24ms/step - accuracy: 0.9199 - loss: 0.2632 - val_accuracy: 0.9105 - val_loss: 0.3236
+Epoch 12/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 22ms/step - accuracy: 0.9218 - loss: 0.2592 - val_accuracy: 0.9084 - val_loss: 0.2898
+Epoch 13/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 23ms/step - accuracy: 0.9290 - loss: 0.2336 - val_accuracy: 0.9121 - val_loss: 0.2919
+Epoch 14/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 24ms/step - accuracy: 0.9314 - loss: 0.2255 - val_accuracy: 0.9164 - val_loss: 0.2876
+Epoch 15/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 5s 19ms/step - accuracy: 0.9309 - loss: 0.2301 - val_accuracy: 0.9188 - val_loss: 0.2819
+Epoch 16/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 2s 20ms/step - accuracy: 0.9347 - loss: 0.2098 - val_accuracy: 0.9204 - val_loss: 0.2744
+Epoch 17/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 22ms/step - accuracy: 0.9320 - loss: 0.2206 - val_accuracy: 0.9162 - val_loss: 0.2871
+Epoch 18/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 22ms/step - accuracy: 0.9391 - loss: 0.1979 - val_accuracy: 0.9202 - val_loss: 0.2727
+Epoch 19/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 22ms/step - accuracy: 0.9402 - loss: 0.1971 - val_accuracy: 0.9218 - val_loss: 0.2725
+Epoch 20/20
+118/118 ━━━━━━━━━━━━━━━━━━━━ 3s 24ms/step - accuracy: 0.9429 - loss: 0.1836 - val_accuracy: 0.9212 - val_loss: 0.2678
+Trial 3 Validation Accuracy: 0.9212
+
+Average Validation Accuracy over 3 trials for MGU: 0.9215
